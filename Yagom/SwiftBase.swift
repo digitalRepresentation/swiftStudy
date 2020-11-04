@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+let age: int = 10
+
+"こんにちは！私は\(age)歳です。"

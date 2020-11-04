@@ -13,7 +13,6 @@
 		B0D0252225519F1F00562E51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D0252025519F1F00562E51 /* Main.storyboard */; };
 		B0D0252425519F2700562E51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0D0252325519F2700562E51 /* Assets.xcassets */; };
 		B0D0252725519F2700562E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0D0252525519F2700562E51 /* LaunchScreen.storyboard */; };
-		B0D0253025519F6100562E51 /* SwiftBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D0252F25519F6100562E51 /* SwiftBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,8 @@
 		B0D0252325519F2700562E51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0D0252625519F2700562E51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0D0252825519F2700562E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0D0252F25519F6100562E51 /* SwiftBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBase.swift; sourceTree = "<group>"; };
+		B0D025312551A22800562E51 /* 00-01SwiftBase.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "00-01SwiftBase.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B0D025322552F30F00562E51 /* 01-01letVar.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "01-01letVar.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,8 @@
 		B0D0252E25519F3A00562E51 /* Yagom */ = {
 			isa = PBXGroup;
 			children = (
-				B0D0252F25519F6100562E51 /* SwiftBase.swift */,
+				B0D025312551A22800562E51 /* 00-01SwiftBase.playground */,
+				B0D025322552F30F00562E51 /* 01-01letVar.playground */,
 			);
 			path = Yagom;
 			sourceTree = "<group>";
@@ -151,7 +152,6 @@
 			files = (
 				B0D0251F25519F1F00562E51 /* ViewController.swift in Sources */,
 				B0D0251B25519F1F00562E51 /* AppDelegate.swift in Sources */,
-				B0D0253025519F6100562E51 /* SwiftBase.swift in Sources */,
 				B0D0251D25519F1F00562E51 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
