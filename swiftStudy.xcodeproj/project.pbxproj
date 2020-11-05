@@ -26,6 +26,7 @@
 		B0D0252825519F2700562E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0D025312551A22800562E51 /* 00-01SwiftBase.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "00-01SwiftBase.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B0D025322552F30F00562E51 /* 01-01letVar.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "01-01letVar.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B0D025342552F59300562E51 /* 02-01inheritance.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "02-01inheritance.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 			children = (
 				B0D025312551A22800562E51 /* 00-01SwiftBase.playground */,
 				B0D025322552F30F00562E51 /* 01-01letVar.playground */,
+				B0D025342552F59300562E51 /* 02-01inheritance.playground */,
 			);
 			path = Yagom;
 			sourceTree = "<group>";
