@@ -30,16 +30,53 @@ class Person {
         print("type method - final class")
     }
     
-    class Student: Person {
-        // var name: String = ""
-        var major: String = ""
-        
-        override func selfIntroduce() {
-            print("私は　\(name)です、専攻は \(major)です。")
-        }
-        
-        override class func classMethod() {
-            print("overriden type method - class")
-        }
-    }
+    
+    
 }
+
+class Student: Person {
+    // var name: String = ""
+    var major: String = ""
+    
+    override func selfIntroduce() {
+        print("私は　\(name)です、専攻は \(major)です。")
+    }
+    
+    override class func classMethod() {
+        print("overriden type method - class")
+    }
+    
+    // staticを使用したタイプメソッドは再宣言ができない
+    // override static func typeMethod() {}
+    
+    // final keywordを使用したメソッドはpropertyを再宣言できない
+    // override func syaHello() {}
+    // override class func finalClassMethod() {}
+    
+    
+}
+
+let yagom: Person = Person()
+let hana: Student = Student()
+
+yagom.name = "yagom"
+hana.name = "hana"
+hana.major = "Swift"
+//yagom.major
+
+yagom.selfIntroduce()
+hana.selfIntroduce()
+
+Person.classMethod()
+
+Person.typeMethod()
+
+Person.typeMethod()
+
+Person.finalCalssMethod()
+
+Student.classMethod()
+
+Student.typeMethod()
+
+Student.finalCalssMethod()
