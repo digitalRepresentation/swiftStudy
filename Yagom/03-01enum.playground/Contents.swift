@@ -33,3 +33,18 @@ case Weekday.fri:
 case .sat, .sun:
     print("楽しい週末!!")
 }
+
+
+//MARK: - 原始値
+//C 言語の enumみたいに定数の値を持つのができます。。
+//rawValueを使用すれば良いです。
+//case別に各々の値を持つべきです。
+
+enum Fruit: Int {
+    case apple = 0
+    case grape = 1
+    case peach
+//
+}
+
+print("Fruit.peach.rawValue == \(Fruit.peach.rawValue)")
