@@ -44,7 +44,38 @@ enum Fruit: Int {
     case apple = 0
     case grape = 1
     case peach
-//
+// case mango = 0
 }
 
 print("Fruit.peach.rawValue == \(Fruit.peach.rawValue)")
+
+//正数タイプだけではなく、Hashableプロトコルを従う全てのタイプが原始値のタイプに師弟されることもできます。
+
+enum School: String {
+    case elementary = "小学校"
+    case middle = "中学校"
+    case high = "高校"
+    case university
+}
+
+print("School.middle.rawVale == \(School.middle.rawValue)")
+
+print("School.university.rawValue == \(School.university.rawValue)")
+
+
+// MARK:原始値を通して初期化
+
+// rawValueを通して初期化ができます。
+// rawValueがcaseに該当されない場合があるので
+// rawValueを通して初期化したインスタンスはオプショナルタイプです。
+
+//let apple: Fruit = Fruit(rawValue: 0)
+let apple: Fruit? = Fruit(rawValue: 0)
+
+if let orange: Fruit = Fruit(rawValue: 5) {
+    print("rawValue 5に該当するケースは \(orange)です")
+} else {
+    print("rawValue 5に該当するケースがありません")
+}
+
+// MARK: メソッド
