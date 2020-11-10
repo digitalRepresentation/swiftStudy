@@ -79,3 +79,27 @@ if let orange: Fruit = Fruit(rawValue: 5) {
 }
 
 // MARK: メソッド
+
+enum Month {
+    case dec, jan, feb
+    case mar, apr, may
+    case jun, jul, aug
+    case sep, oct, nov
+
+    func printMessage() {
+        switch self {
+        case .mar, .apr, .may:
+            print("따스한 봄~")
+        case .jun, .jul, .aug:
+            print("여름 더워요~")
+        case .sep, .oct, .nov:
+            print("가을은 독서의 계절!")
+        case .dec, .jan, .feb:
+            print("추운 겨울입니다")
+        }
+    }
+
+}
+
+Month.mar.printMessage()
+Month.jul.printMessage()
