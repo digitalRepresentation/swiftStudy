@@ -73,4 +73,4 @@ case .some(let value):
 optionalValue4 = nil
 
 //既存変数のように使用不可 - Optionalと一般値は別のタイプなので計算不可
-optionalValue4 = optionalValue4 + 1
+//optionalValue4 = optionalValue4 + 1
