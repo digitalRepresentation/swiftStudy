@@ -16,8 +16,8 @@ var myName:String? = nil
 
 var myName2:String! = nil
 
-if let name: String = myName {
-    printName(name)
+if let name2: String = myName2 {
+    printName(name2)
 } else {
     print("myName == nil")
 }
@@ -26,8 +26,36 @@ if let name: String = myName {
 // 定数使用範囲ではなきため、Comfileエラー発生
 //printName(name)
 
-var myName2: String? = "yagom"
+var myName3: String? = "yagom"
 var yourName: String?
+
+if let name3 = myName3, let friend = yourName {
+    print("\(name3) and \(friend)")
+}
+// yourNameがnilなので実行できません。
+
+yourName = "hana"
+
+if let name3 = myName3, let friend = yourName {
+   print("\(name3) and \(friend)")
+}
+
 //2.ForceUnwrapping : 強制抽出
 
+func printName2(_ name4: String) {
+    print(name4)
+}
 
+var myName4: String? = "yagom"
+
+printName(myName4!)
+
+myName = nil
+
+print(myName!)
+// 強制抽出する際に値がないのでrunTimeエラーが発生
+
+var yourName2: String! = nil
+
+printName2(yourName2)
+// nilの値が伝達になるのでruntimeエラーが発生
