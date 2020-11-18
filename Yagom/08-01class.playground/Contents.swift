@@ -48,4 +48,30 @@ Sample.typeProperty = 300
 Sample.typeMethod() // type method
 
 //mutableReference.typeProperty = 400
+//mutableReference.typeMethod()
 
+//MARK: - Student Class
+
+class Student {
+    var name: String = "unknown"
+    var `class`: String = "Swift"
+    
+    class func selfIntroduce() {
+        print("学生タイプです")
+    }
+    
+    func selfIntroduce() {
+        print("私は \(self.class)班 \(name)です")
+    }
+}
+
+Student.selfIntroduce()
+
+var yagom: Student = Student()
+yagom.name = "yagom"
+yagom.class = "スイフト"
+yagom.selfIntroduce()
+
+let jina: Student = Student()
+jina.name = "jina"
+jina.selfIntroduce()
