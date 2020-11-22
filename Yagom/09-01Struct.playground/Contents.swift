@@ -57,6 +57,20 @@ struct Student {
     }
     
     func selfIntroduce() {
-        print("私は)
+        print("私は \(self.class)クラス \(name)です")
     }
 }
+
+Student.selfIntroduce()
+
+var yagom: Student = Student()
+yagom.name = "yagom"
+yagom.class = "スイフト"
+yagom.selfIntroduce()
+
+let jina: Student = Student()
+
+//不変インスタンスなのでプロパティーの値が変更不可
+//コンパイルエラー発生
+//jina.name = "jina"
+jina.selfIntroduce()
