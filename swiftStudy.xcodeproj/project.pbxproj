@@ -36,6 +36,7 @@
 		B0D025322552F30F00562E51 /* 01-01letVar.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "01-01letVar.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B0D025342552F59300562E51 /* 02-01inheritance.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "02-01inheritance.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B0D025352555928A00562E51 /* 03-01enum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "03-01enum.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B0E660B8256D52EA0084463B /* 11-01Closer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "11-01Closer.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 				B023B4842563E373004553EA /* 08-01class.playground */,
 				B0226A7325680A0B00D475E0 /* 09-01Struct.playground */,
 				B0740A03256AAFF800BF03CF /* 10-01valueOrReferenceType.playground */,
+				B0E660B8256D52EA0084463B /* 11-01Closer.playground */,
 			);
 			path = Yagom;
 			sourceTree = "<group>";

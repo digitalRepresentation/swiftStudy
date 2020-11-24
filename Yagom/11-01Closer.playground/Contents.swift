@@ -1,0 +1,38 @@
+import UIKit
+
+//コードのブロック
+//一級市民(first-citizen)
+//variable, constanceなどに保存、伝達パラメータに伝達が可能
+//function : 名前があるクローザー
+
+//MARK : - 定義
+
+//{ (parameter list) -> 変換タイプ in
+//    実行コード
+//}
+
+//functionを使うなら
+func sumFunction(a: Int, b: Int) -> Int {
+    return a + b
+}
+
+var sumResult: Int = sumFunction(a: 1, b: 2)
+
+print(sumResult) // 3
+
+//クローザーの使用
+var sum: (Int, Int) -> Int = { (a: Int, b: Int) in
+    return a + b
+}
+
+sumResult = sum(1, 2)
+print(sumResult) // 3
+
+// functionはクローザーの一つなので
+// sum変数は関数も割り当てることができます
+sum = sumFunction(a:b:)
+
+sumResult = sum(1, 2)
+print(sumResult) // 3
+
+
