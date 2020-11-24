@@ -35,4 +35,16 @@ sum = sumFunction(a:b:)
 sumResult = sum(1, 2)
 print(sumResult) // 3
 
+//MARK: - 関数の伝達パラメータとしてのクローザー
 
+let add: (Int, Int) -> Int
+add = { (a: Int, b: Int) -> Int in
+    return a + b
+}
+
+let substract: (Int, Int) -> Int
+substract = { a: Int, b: Int) -> Int in
+    return a - b
+}
+
+let divide: (Int, Int) -> Int
