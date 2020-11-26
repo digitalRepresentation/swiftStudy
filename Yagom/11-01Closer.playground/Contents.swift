@@ -48,3 +48,30 @@ substract = { a: Int, b: Int) -> Int in
 }
 
 let divide: (Int, Int) -> Int
+divide = {(a: Int, b: Int) -> Int in
+    return a / b
+}
+
+func calculate(a: Int, b: Int, method: (Int, Int) -> Int) -> Int {
+    return method(a, b)
+}
+
+var calculated: Int
+
+calculated = calculate(a: 50, b: 10, method: add)
+
+print(calculated) // 60
+
+calculated = calculate(a: 50, b: 10, method: substract)
+
+print(calculated) // 40
+
+calculated = calculate(a: 50, b: 10, method: divide)
+
+print(calculated)
+
+calculated = calculate(a: 50, b: 10, method: { (left: Int, right: Int) ->
+    return left * right
+}
+
+print(calculated)
