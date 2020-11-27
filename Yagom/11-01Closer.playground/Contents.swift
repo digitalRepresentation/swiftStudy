@@ -43,7 +43,7 @@ add = { (a: Int, b: Int) -> Int in
 }
 
 let substract: (Int, Int) -> Int
-substract = { a: Int, b: Int) -> Int in
+substract = { (a: Int, b: Int) -> Int in
     return a - b
 }
 
@@ -70,8 +70,8 @@ calculated = calculate(a: 50, b: 10, method: divide)
 
 print(calculated)
 
-calculated = calculate(a: 50, b: 10, method: { (left: Int, right: Int) ->
+calculated = calculate(a: 50, b: 10, method: { (left: Int, right: Int) -> Int in
     return left * right
-}
+})
 
 print(calculated)
