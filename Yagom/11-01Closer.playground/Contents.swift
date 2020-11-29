@@ -70,7 +70,7 @@ calculated = calculate(a: 50, b: 10, method: divide)
 
 print(calculated)
 
-calculated = calculate(a: 60, b: 10, method: { (left: Int, right: Int) -> Int in
+calculated = calculate(a: 70, b: 10, method: { (left: Int, right: Int) -> Int in
     return left * right
 })
 
