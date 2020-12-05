@@ -19,6 +19,6 @@ var result: Int
 //最後のパラメーター名前を総略した後
 //関数の小括弧の外部にCloserを実装できる
 
-result = calculate(a: 30, b: 10) { (left: Int, right: Int) -> Int in
+result = calculate(a: 40, b: 10) { (left: Int, right: Int) -> Int in
     return left + right
 }
