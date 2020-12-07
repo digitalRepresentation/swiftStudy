@@ -64,7 +64,7 @@ result = calculate(a: 10, b: 10) { $0 + $1 }
 print(result)
 
 // 縮約しないクローザー文法と縮約しない後の文法
-result = calculate(a: 10, b: 10, method: { (left: Int, right: Int) -> Int in
+result = calculate(a: 20, b: 10, method: { (left: Int, right: Int) -> Int in
     return left + right
 })
 
