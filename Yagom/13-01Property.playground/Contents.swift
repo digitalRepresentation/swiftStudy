@@ -69,7 +69,7 @@ print(Student.selfIntroduction)
 
 // create instance
 var jinyoung: Student = Student()
-jinyoung.japaneseAge = 28
+jinyoung.japaneseAge = 27
 
 // instance stored property 使用
 jinyoung.name = "jinyoung"
@@ -95,3 +95,4 @@ struct Money {
     }
 }
 
+var moneyInMyPocket
